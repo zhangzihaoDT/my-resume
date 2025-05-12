@@ -1,8 +1,13 @@
+---
+title: "张梓豪的简历"
+author: "张梓豪"
+date: "2023-05-12"
+---
+
 # 张梓豪｜ 智能汽车·数据策略 × AI 分析师 
 > 📍 上海 | 求职意向：高级商业分析师/数据战略负责人  
 > 🔥 擅长销量预测、用户洞察、策略建议等方向。现阶段专注于 AI 工具应用、内容创作与副业产品探索。
 
----
 ## 💼 核心能力
 - 数据策略与业务洞察：擅长销量趋势预测、用户画像分析、市场细分与竞品定位，支撑产品上市节奏与营销动作判断
 - AI增强数据分析流程：熟练使用 ChatGPT、LangChain、Gradio 等工具构建数据问答原型，提升洞察效率
@@ -78,5 +83,8 @@ ev-sales-dashboard.md
 
 ## 📬 联系方式（Contact）
 
-- 📧 zhangzihao.2021@qq.com
+- 📧 zhangzihao.2021[at]qq.com
 - 🐙 GitHub：https://github.com/zhangzihaoDT
+
+
+---
