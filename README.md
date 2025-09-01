@@ -4,24 +4,24 @@ author: '张梓豪'
 date: '2025-09-01'
 ---
 
-# 张梓豪｜ 智能汽车·数据策略 × AI 分析师
+# 张梓豪｜数据策略 & AI 应用专家
 
-> 📍 上海 | 求职意向：高级商业分析师 / 数据战略负责人  
-> 🔥 擅长销量预测、用户洞察、策略建议。专注 AI 工具应用、自动化分析与副业产品探索。
+📍 上海 | 求职意向：高级商业分析师 / 数据战略负责人 / AI 产品方向  
+🔥 聚焦数据驱动的业务决策与 AI 增强分析，兼具汽车行业深度与跨领域经验
 
 ---
 
 ## 💼 核心能力
 
-- **数据策略与业务洞察**：销量预测、用户画像、市场细分、竞品定位 → 支撑产品上市与营销节奏
-- **AI 增强分析**：熟练使用 ChatGPT、LangChain、Streamlit 等工具构建数据问答原型，提高洞察效率
-- **建模与预测**：贝叶斯转化率预测、因果归因分析，提升决策前瞻性与准确性
-- **可视化表达**：精通 Tableau，能快速输出营销分析、品牌对比、渗透率仪表盘
-- **跨部门协作**：具备与产品、市场、品牌和高层的沟通经验，能以分析为中枢连接决策
+- **数据策略与业务洞察**：擅长销量预测、用户画像、市场细分与竞品定位，支撑产品上市节奏与营销动作
+- **AI 驱动的数据分析**：熟练使用 LangChain、LangGraph、Gradio 等工具构建数据问答与智能 Agent，提升分析效率
+- **统计建模与预测**：具备贝叶斯建模与概率预测经验，支持转化率与销量趋势预估
+- **可视化与叙事表达**：精通 Tableau & Python，可快速产出市场洞察与可视化报告
+- **跨部门沟通**：与产品、市场、品牌及管理层协作，能以数据为中枢连接业务决策
 
 ---
 
-## 🧑‍💼 工作经历（Work Experience）
+## 🧑‍💼 工作经历
 
 ### 智己汽车｜数据策略分析师
 
@@ -61,58 +61,72 @@ _2021.03 – 至今 · 上海_
 
 ---
 
-### 字节跳动｜数据中心，2B 产品设计师
+### 字节跳动｜数据中心 · 2B 产品设计师
 
 _2020.03 – 2021.03 · 上海_
 
-- 基于火山引擎数据架构，负责应用层数据产品 **DataWind** 的设计与迭代
-- 与后端、算法、前端团队协作，优化数据查询体验与可视化交互
-
----
+- 参与火山引擎数据架构产品（Datawind）的设计与迭代，服务企业级客户
+- 负责应用层数据可视化与分析产品的需求调研、交互设计与落地
 
 ### 第一财经｜数据可视化设计师
 
 _2017.07 – 2020.03 · 上海_
 
-- 使用 Tableau、D3.js 制作多篇爆款图解，提升数据新闻影响力
-- 现场参与双十一报道，制作 10W+ 阅读文章
-- 作品《Behind the 30,000 flight data, the battle of the sky in 230 cities》入围  
-  _Information is Beautiful Awards 2019 Longlist_
+- 使用 Tableau、D3.js 等工具制作多篇爆款数据新闻作品
+- 《Behind the 30,000 flight data…》入围 _Information is Beautiful Awards 2019 Longlist_
+- 参与双十一报道，助力第一个 10W+ 图解文章产出
 
 ---
 
 ## 🛠 技能栈（Skills & Tools）
 
-- **数据分析**：SQL · Excel · Tableau · Python（Pandas, PyMC, NumPy）
-- **AI 工具**：LangChain · Streamlit · OpenAI API · Deepseek
-- **行业知识**：汽车行业数据模型搭建
-- **语言能力**：中文（母语） · 英文（工作可用）
+- **数据分析**：SQL, Python (Pandas, NumPy, PyMC), Excel, Tableau
+- **AI 工具**：LangChain, LangGraph, Gradio, OpenAI, DeepSeek
+- **统计建模**：贝叶斯建模, 时间序列预测, Prophet
+- **行业知识**：汽车行业市场模型搭建与策略分析
+- **语言**：中文（母语），英文（工作可用）
+  ![Tableau](https://img.shields.io/badge/-Tableau-blue?style=flat-square)  
+  ![SQL](https://img.shields.io/badge/-SQL-lightgrey?style=flat-square)  
+  ![Python](https://img.shields.io/badge/-Python-green?style=flat-square)  
+  ![LangChain](https://img.shields.io/badge/-LangChain-purple?style=flat-square)  
+  ![数据策略](https://img.shields.io/badge/-数据策略-orange?style=flat-square)  
+  ![营销转化率分析](https://img.shields.io/badge/-营销转化率分析-yellow?style=flat-square)  
+  ![AI分析助手](https://img.shields.io/badge/-AI分析助手-ff69b4?style=flat-square)
 
 ---
 
-## 📊 项目作品（Projects）
+## 📊 成果作品
 
 - **智能汽车行业问答助手**  
-  LangGraph + SQLite + LLM，实现自然语言数据分析  
-  → [项目介绍](./projects/ai-assistant.md)
+  基于 LangGraph + DuckDB + LLM 的自然语言数据分析系统
 
-- **新能源汽车市场仪表盘**  
-  基于公开上险数据的 Tableau 仪表盘  
-  → [作品链接](https://public.tableau.com/app/profile/...)
+  > [项目介绍](./projects/ai-assistant.md) ｜ 技术栈：LangChain / Gradio / SQL / 多 Agent
 
-- **新能源汽车用户画像分析**  
-  基于公开数据的结构化分析，支持产品定位
+- **新能源市场 Tableau 仪表盘**  
+  基于上险数据构建品牌/价格/城市趋势分析
 
----
+  > [作品链接](https://public.tableau.com/app/profile/...)
 
-## ✍️ 内容创作（Content）
-
-- 个人公众号：**zihao 和三爪**
-- 已发布：《如何用贝叶斯方法预测转化率》《AI 如何帮助你发现策略机会》
+- **用户画像与转化率分析**  
+  应用贝叶斯方法预测营销转化效果，成果已发表于个人公众号
 
 ---
 
-## 📬 联系方式（Contact）
+## ✍️ 内容创作
+
+- 微信公众号：**zihao 和三爪**
+- 代表文章：《如何用贝叶斯方法预测转化率》、《AI 如何帮助你发现策略机会》
+
+---
+
+## 🚀 职业愿景
+
+未来定位：**Agent Engineer（智能体工程师）**  
+致力于打造数据驱动的策略决策 AI 工具，连接 **分析 → 策略 → 决策** 的闭环
+
+---
+
+## 📬 联系方式
 
 - 📧 zhangzihao.2021[at]qq.com
 - 🐙 GitHub: [github.com/zhangzihaoDT](https://github.com/zhangzihaoDT)
