@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>zihao's_portfolio.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%E5%BC%A0%E6%A2%93%E8%B1%AA">张梓豪</h1>
+<p><strong>数据策略分析师｜业务决策支持｜ AI 增强分析</strong></p>
+<p>📍 上海<br>
+🎯 求职方向：高级商业分析师 / BI 理解驱动的决策支持 / AI 应用型分析岗位</p>
+<hr>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>数据策略型业务分析师，长期服务于新能源汽车等 <strong>高不确定性、高决策密度</strong> 的业务场景。<br>
+职业路径从 <strong>数据可视化 → BI 产品设计 → 业务决策分析</strong>，对数据如何被设计、使用并最终转化为决策具备系统性理解。<br>
+<strong>核心价值</strong>：擅长从业务问题反推指标体系与分析框架，在数据不完整与噪声较高的环境下，通过结构分解、概率建模与复盘机制支持管理层决策。<br>
+<strong>能力特色</strong>：既能独立完成复杂分析，也能将分析方法沉淀为可复用的工具、模板与自动化分析流水线。</p>
+<hr>
+<h2 id="%E6%88%91%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B">我解决问题类型</h2>
+<h3 id="1-%E6%A8%A1%E7%B3%8A%E9%97%AE%E9%A2%98%E7%9A%84%E7%BB%93%E6%9E%84%E5%8C%96">1. 模糊问题的结构化</h3>
+<blockquote>
+<p>当目标不清、口径混乱、大家“感觉不对但说不清”时。</p>
+</blockquote>
+<p><strong>解法</strong>：将直觉问题拆解为 <strong>可分析、可讨论、可行动</strong> 的结构。</p>
+<h3 id="2-%E5%A4%9A%E5%9B%A0%E7%B4%A0%E5%8F%A0%E5%8A%A0%E4%B8%8B%E7%9A%84%E8%B4%A1%E7%8C%AE%E5%88%A4%E6%96%AD">2. 多因素叠加下的贡献判断</h3>
+<blockquote>
+<p>当结果变化由多种因素共同作用时。</p>
+</blockquote>
+<p><strong>解法</strong>：区分 <strong>结构变化、效率变化与随机波动</strong>，避免错误因果。</p>
+<h3 id="3-%E4%B8%8D%E5%AE%8C%E6%95%B4%E4%BF%A1%E6%81%AF%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%81%A5%E5%86%B3%E7%AD%96">3. 不完整信息下的稳健决策</h3>
+<blockquote>
+<p>在数据滞后、缺失、噪声较大时。</p>
+</blockquote>
+<p><strong>解法</strong>：用 <strong>区间、概率与情景假设</strong>，支持“可执行而非完美”的判断。</p>
+<hr>
+<h2 id="%E6%88%91%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F">我的工作方式</h2>
+<p><strong>1. 一套指标体系</strong><br>
+每一个 Topic，都会先定义一套服务于决策的问题树；指标不是越多越好，而是刚好能回答问题。<br>
+<strong>典型实践</strong>：用户分层与二八法则挖掘、不同资产层级的人群贡献拆解。</p>
+<p><strong>2. 几个「神奇数字」</strong><br>
+在复杂业务中，寻找长期稳定、跨周期成立的比例或关系（如人群资产与线索比、单线索平均触达次数）。<br>
+<strong>洞察逻辑</strong>：当结果偏离这些锚点时，往往意味着结构性变化，而不是偶然波动。</p>
+<p><strong>3. 若干分析框架</strong></p>
+<ul>
+<li><strong>异动拆解</strong>：时间下钻、人群 / 渠道 / 产品结构拆解</li>
+<li><strong>OKR / 目标反推</strong>：从目标反拆指标与路径</li>
+<li><strong>对比分析</strong>：竞品 / 历史 / 横向基准</li>
+</ul>
+<p><strong>4. 过程可复用、可自动化</strong><br>
+将分析流程模块化，减少重复劳动，提升分析的一致性与效率。</p>
+<hr>
+<h2 id="%E8%81%8C%E4%B8%9A%E7%BB%8F%E5%8E%86">职业经历</h2>
+<h3 id="%E6%99%BA%E5%B7%B1%E6%B1%BD%E8%BD%A6%E4%BA%A7%E5%93%81%E6%88%98%E7%95%A5%E4%B8%AD%E5%BF%83%E4%B8%9A%E5%8A%A1%E5%88%86%E6%9E%90--%E5%9E%8B%E8%B0%B1%E7%AD%96%E7%95%A5">智己汽车｜产品战略中心｜业务分析 &amp; 型谱策略</h3>
+<p><em>2021.03 – 至今 · 上海</em></p>
+<blockquote>
+<p><strong>核心职责：</strong></p>
+</blockquote>
+<ul>
+<li><strong>新产品上市与节奏评估</strong>：负责新车型上市期的全链路数据监控与策略调整。</li>
+<li><strong>转化与效率诊断</strong>：识别业务运营中的结构性问题与效率瓶颈，输出优化建议。</li>
+<li><strong>预测与归因</strong>：在不完整数据下进行预测、归因与方案比较，建立 KPI 驱动的分析框架。</li>
+<li><strong>工具化沉淀</strong>：将分析能力封装为可复用的工具与系统，提升团队人效。</li>
+</ul>
+<blockquote>
+<p><strong>💡 角色转变</strong></p>
+</blockquote>
+<ul>
+<li>由于具备 BI 产品设计背景，我对指标口径、数据结构与分析工具有系统理解。</li>
+<li>能 <strong>主动设计分析框架</strong>，而非被动响应需求。</li>
+<li>擅长将复杂分析过程沉淀为可复用的分析模块与自动化流程。</li>
+</ul>
+<h4 id="%F0%9F%8E%AF-%E4%B8%89%E7%B1%BB%E5%85%B8%E5%9E%8B%E5%AE%9E%E6%88%98%E5%9C%BA%E6%99%AF%E4%B8%BB%E5%AF%BC%E9%A1%B9%E7%9B%AE">🎯 三类典型实战场景（主导项目）</h4>
+<p><strong>场景 1：模糊问题的结构化</strong></p>
+<blockquote>
+<p><strong>Q：当管理层“想看看情况”、“感觉效果一般”时，转化为可分析的问题</strong></p>
+</blockquote>
+<ul>
+<li><strong>拆解路径</strong>：将“上市效果如何”拆解为 <strong>跳变</strong>（前后变化）、<strong>比值</strong>（效率变化）、<strong>横向</strong>（同期对比）。</li>
+<li><strong>执行动作</strong>：定义统一的分析视角与口径，避免各部门各说各话；将一次性复盘沉淀为可复用模板。</li>
+</ul>
+<p><strong>👉 结果</strong>：管理层不再争论“看哪个数”，而是讨论“为什么这样、下一步怎么办”。</p>
+<p><strong>场景 2：多因素叠加下的贡献判断</strong></p>
+<blockquote>
+<p><strong>Q：当销量 / 转化变化时，判断“变化来自哪里”，而非仅仅关注“增长或下降跌”</strong></p>
+</blockquote>
+<ul>
+<li><strong>拆解路径</strong>：将结果拆解为 <strong>结构变化</strong>（车型/人群/渠道）、<strong>效率变化</strong>（转化率/单点产出）、<strong>外部扰动</strong>（活动/节假日/随机波动）。</li>
+<li><strong>执行动作</strong>：构建转化漏斗与结构分解框架；用横向对比与历史基准避免伪因果。</li>
+</ul>
+<p><strong>👉 结果</strong>：资源配置从“凭经验”转向“知道钱花在哪更不容易错”。</p>
+<p><strong>场景 3：不完整信息下的稳健决策</strong></p>
+<blockquote>
+<p><strong>Q：当数据不全但必须决策时，提供可参考的预测区间</strong></p>
+</blockquote>
+<ul>
+<li><strong>执行动作</strong>：</li>
+</ul>
+<ol>
+<li>用贝叶斯模型预测转化与销量区间。</li>
+<li>在数据缺失场景下估算结构比例（如电池大小 Mix / 燃料类型 Mix）。</li>
+<li>用情景假设比较不同方案的风险暴露。</li>
+</ol>
+<p><strong>👉 结果</strong>：决策不再追求“最准”，而是“最不容易翻车”。</p>
+<hr>
+<h3 id="%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83-2b-%E6%95%B0%E6%8D%AE%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%B8%88">字节跳动｜数据中心｜ 2B 数据产品设计师</h3>
+<p><em>2020.03 – 2021.03 · 上海</em></p>
+<blockquote>
+<p><strong>🚀 能力跃迁</strong>：从“使用 BI”到“设计 BI”</p>
+</blockquote>
+<ul>
+<li><strong>企业级 BI 设计</strong>：参与 Datawind 等企业级数据分析产品的设计与迭代。</li>
+<li><strong>分析路径设计</strong>：负责分析类产品的需求拆解、指标抽象、交互与使用路径设计。</li>
+<li><strong>用户洞察</strong>：深入接触企业级用户与内部高频数据使用者，理解真实决策链条。</li>
+</ul>
+<p><strong>核心积累</strong>：</p>
+<ul>
+<li>深入理解 BI 产品的底层逻辑（指标体系、数据建模、分析流程）。</li>
+<li>这使我在后续担任业务分析师时，能理解 <strong>BI 为什么这样设计、在什么场景下才有决策价值</strong>。</li>
+</ul>
+<hr>
+<h3 id="%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%BB%8F%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AE%BE%E8%AE%A1%E5%B8%88">第一财经｜数据可视化设计师</h3>
+<p><em>2017.07 – 2020.03 · 上海</em></p>
+<blockquote>
+<p><strong>🎨 职业起点</strong>：从数据表达与可视化进入数据世界</p>
+</blockquote>
+<ul>
+<li><strong>数据新闻制作</strong>：基于 Tableau、D3.js 等工具制作数据新闻与商业分析作品。</li>
+<li><strong>数据叙事</strong>：负责将复杂数据转化为公众可理解的图形叙事，强调逻辑清晰与信息密度。</li>
+<li><strong>行业认可</strong>：作品入围 <em>Information is Beautiful Awards 2019 Longlist</em>。</li>
+</ul>
+<p><strong>核心积累</strong>：</p>
+<ul>
+<li>对数据表达、指标呈现与“信息是否被正确理解”建立了极高的敏感度。</li>
+</ul>
+<hr>
+<h2 id="%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B--%E6%8A%80%E8%83%BD">核心能力 &amp; 技能</h2>
+<h3 id="%F0%9F%A7%A0-%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B">🧠 核心能力</h3>
+<ul>
+<li><strong>分析与决策框架设计</strong>：业务问题结构化、指标体系与分析路径设计</li>
+<li><strong>数据建模与推断</strong>：贝叶斯建模、转化率预测、时间序列分析</li>
+<li><strong>BI 与分析系统理解</strong>：指标口径、数据建模、分析工具设计逻辑</li>
+<li><strong>自动化与平台化分析</strong>：分析流水线与问答式分析工具搭建</li>
+<li><strong>分析表达与复盘</strong>：将复杂分析转化为管理层可用的决策信息</li>
+</ul>
+<h3 id="%F0%9F%9B%A0-%E6%8A%80%E6%9C%AF%E6%A0%88">🛠 技术栈</h3>
+<ul>
+<li><strong>分析与建模</strong>：Python (Pandas, PyMC, scikit-learn), SQL</li>
+<li><strong>统计方法</strong>：贝叶斯推断, 时间序列预测, 实验与因果分析</li>
+<li><strong>数据与自动化</strong>：DuckDB, Parquet, n8n</li>
+<li><strong>BI 与可视化</strong>：Tableau, Streamlit, Gradio</li>
+<li><strong>AI 分析应用</strong>：LangChain, LangGraph, LLM 驱动的数据分析助手</li>
+<li><strong>语言</strong>：中文（母语）, 英文（工作可用）</li>
+</ul>
+<hr>
+<h2 id="%E4%BD%9C%E5%93%81%E4%B8%8E%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F">作品与联系方式</h2>
+<ul>
+<li><strong>GitHub</strong>：<a href="https://github.com/zhangzihaoDT">github.com/zhangzihaoDT</a></li>
+<li><strong>公众号代表作</strong>：
+<ul>
+<li>《如何用贝叶斯方法预测汽车营销转化率？》</li>
+<li>《围剿 Model Y，LS6 能否一战？》</li>
+</ul>
+</li>
+</ul>
+<p>📧 <strong>Email</strong>: zhangzihao.2021[at]qq.com<br>
+💬 <strong>WeChat</strong>: zhangzihaoDT</p>
+
+</body>
+</html>
